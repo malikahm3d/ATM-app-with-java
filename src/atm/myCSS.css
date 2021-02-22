@@ -1,0 +1,74 @@
+*{
+    -fx-base:white;
+}
+
+
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('fonts/Times New Roman.otf');
+}
+
+
+
+.left-buttons{
+    -fx-font-size: 21pt;
+    -fx-text-fill: #322b6b;
+    -fx-font-family: 'Times new Roman';
+    -fx-shape-color:#322b6b;
+    -fx-shape: "M 100 300 L 100 400 L 450 400 Q 450 300 400 300 Z ";
+    -fx-effect: dropshadow(three-pass-box,#322b6b ,25,0.5,0,0);
+    
+}
+
+
+
+.right-buttons{
+    -fx-font-size: 21pt;
+    -fx-text-fill: #322b6b;
+    -fx-font-family: 'Times new Roman';
+    
+    -fx-shape-color:#322b6b;
+    -fx-shape: "M 250 500 Q 200 500 200 350 L 650 350 Q 650 450 650 500 Z";
+    -fx-effect: dropshadow(three-pass-box,#322b6b ,25,0.5,0,0);
+
+
+}
+
+.right-buttons2{
+    -fx-font-size: 21pt;
+    -fx-text-fill: #322b6b;
+    -fx-shape-color:#322b6b;
+    -fx-shape: "M 250 500 Q 200 500 200 350 L 650 350 Q 650 450 650 500 Z";
+    -fx-effect: dropshadow(three-pass-box,#322b6b ,25,0.5,0,0);
+
+
+}
+
+
+
+
+.left-buttons2{
+    -fx-font-size: 21pt;
+    -fx-text-fill: #322b6b;
+    -fx-shape-color:#322b6b;
+    -fx-shape: "M 100 300 L 100 400 L 450 400 Q 450 300 400 300 Z ";
+    -fx-effect: dropshadow(three-pass-box,#322b6b ,25,0.5,0,0);
+}
+
+
+
+.my-header{
+    -fx-shape:"M 200 250 L 200 350 C 300 300 450 300 500 300 L 500 250 Z";
+    -fx-text-fill: white;
+
+}
+
+
+.re-label{
+        -fx-font-size: 21pt;
+        -fx-font-family: 'Times new Roman';
+        fx-font-style: 'Bold';
+        -fx-text-fill: #322b6b;
+
+}

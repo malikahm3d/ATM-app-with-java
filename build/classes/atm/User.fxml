@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="914.0" prefWidth="1290.0" stylesheets="@myCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.UserController">
+      <children>
+      <ImageView fitHeight="751.0" fitWidth="870.0" layoutX="142.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.73" />
+         </effect>
+      </ImageView>
+      <Label layoutX="506.0" layoutY="234.0" text="Select a transaction" textAlignment="CENTER" textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="withdrawalBtn" layoutY="385.0" mnemonicParsing="false" onAction="#withdrawal" prefHeight="72.0" prefWidth="338.0" styleClass="left-buttons" text="Cash withdrawal" textFill="#2806bf">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="balanceBtn" layoutX="952.0" layoutY="385.0" mnemonicParsing="false" onAction="#balance" prefHeight="72.0" prefWidth="338.0" styleClass="right-buttons" text="Balance inquiry" textAlignment="CENTER" textFill="#2806bf">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="tranfareBtn" layoutY="514.0" mnemonicParsing="false" onAction="#transfare" prefHeight="72.0" prefWidth="338.0" styleClass="left-buttons" text="Transfer cash" textFill="#2806bf">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="statementBtn" layoutX="952.0" layoutY="514.0" mnemonicParsing="false" onAction="#statement" prefHeight="72.0" prefWidth="338.0" styleClass="right-buttons" text="Bank statement" textFill="#2806bf">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="depositBtn" layoutY="643.0" mnemonicParsing="false" onAction="#deposit" prefHeight="72.0" prefWidth="338.0" styleClass="left-buttons" text="Deposit" textFill="#2806bf">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backBtn" cancelButton="true" layoutY="854.0" mnemonicParsing="false" onAction="#goBack" prefHeight="51.0" prefWidth="95.0" styleClass="left-buttons2" text="&lt;&lt;" textFill="#2806bf">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane prefHeight="200.0" prefWidth="1290.0" style="-fx-background-color: #322b6b;" styleClass="my-header" />
+   </children> 
+</AnchorPane>

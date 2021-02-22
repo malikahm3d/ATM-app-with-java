@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="912.0" prefWidth="1411.0" stylesheets="@myCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.TransferFIController">
+   <children>
+      <ImageView fitHeight="805.0" fitWidth="942.0" layoutX="273.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.73" />
+         </effect>
+      </ImageView>
+      <Label fx:id="msg" alignment="TOP_CENTER" layoutX="141.0" layoutY="591.0" prefHeight="53.0" prefWidth="1220.0" textAlignment="CENTER" textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font></Label>
+      <Button fx:id="cont" cancelButton="true" layoutY="816.0" mnemonicParsing="false" onAction="#cancel" prefHeight="70.0" prefWidth="299.0" styleClass="left-buttons" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="cancel" defaultButton="true" layoutX="1184.0" layoutY="816.0" mnemonicParsing="false" onAction="#cont" prefHeight="70.0" prefWidth="299.0" styleClass="right-buttons" text="Continue">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <AnchorPane prefHeight="241.0" prefWidth="1483.0" style="-fx-background-color: #322b6b;" styleClass="my-header" />
+   </children>
+</AnchorPane>

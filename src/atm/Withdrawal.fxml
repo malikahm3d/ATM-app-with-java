@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="914.0" prefWidth="1290.0" stylesheets="@myCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.WithdrawalController">
+   <children>
+      <ImageView fitHeight="623.0" fitWidth="717.0" layoutX="292.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.73" />
+         </effect>
+      </ImageView>
+      <Label layoutX="350.0" layoutY="212.0" text="Select the withdrawal amount" textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn50" layoutY="307.0" mnemonicParsing="false" onAction="#get50" prefHeight="72.0" prefWidth="350.0" styleClass="left-buttons" text="50">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn100" layoutY="427.0" mnemonicParsing="false" onAction="#get100" prefHeight="72.0" prefWidth="350.0" styleClass="left-buttons" text="100">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn200" layoutY="547.0" mnemonicParsing="false" onAction="#get200" prefHeight="72.0" prefWidth="350.0" styleClass="left-buttons" text="200">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn500" layoutY="659.0" mnemonicParsing="false" onAction="#get500" prefHeight="72.0" prefWidth="350.0" styleClass="left-buttons" text="500">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn1000" layoutX="950.0" layoutY="307.0" mnemonicParsing="false" onAction="#get1000" prefHeight="72.0" prefWidth="350.0" styleClass="right-buttons" text="1000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn1500" layoutX="950.0" layoutY="427.0" mnemonicParsing="false" onAction="#get1500" prefHeight="72.0" prefWidth="350.0" styleClass="right-buttons" text="1500">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn2000" layoutX="950.0" layoutY="547.0" mnemonicParsing="false" onAction="#get2000" prefHeight="72.0" prefWidth="350.0" styleClass="right-buttons" text="2000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="otherAmountBtn" layoutX="950.0" layoutY="671.0" mnemonicParsing="false" onAction="#otherAmount" prefHeight="72.0" prefWidth="350.0" styleClass="right-buttons" text="Other Amount">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="backBtn" cancelButton="true" layoutY="854.0" mnemonicParsing="false" onAction="#goBack" prefHeight="60.0" prefWidth="112.0" styleClass="left-buttons2" text="&lt;&lt;" />
+      <AnchorPane prefHeight="200.0" prefWidth="1328.0" style="-fx-background-color: #322b6b;" styleClass="my-header" />
+   </children>
+</AnchorPane>

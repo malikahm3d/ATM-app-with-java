@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="914.0" prefWidth="1290.0" stylesheets="@myCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.NewUserFIController">
+   <children>
+      <ImageView fitHeight="715.0" fitWidth="787.0" layoutX="276.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.73" />
+         </effect>
+      </ImageView>
+      <Label layoutX="363.0" layoutY="309.0" text="Your request has been sent " textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font></Label>
+      <Label layoutX="489.0" layoutY="380.0" text="we will contact you via Email" textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font></Label>
+      <Label layoutX="263.0" layoutY="514.0" text="Thank you for choosing The Bank of Liberty" textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font></Label>
+      <Label layoutX="317.0" layoutY="632.0" text="do you want to form another request ?" textFill="#322b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font></Label>
+      <Button fx:id="no" cancelButton="true" layoutY="752.0" mnemonicParsing="false" onAction="#loginScreen" prefHeight="67.0" prefWidth="307.0" styleClass="left-buttons" text="No">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="yes" defaultButton="true" layoutX="1032.0" layoutY="752.0" mnemonicParsing="false" onAction="#newUserScreen" prefHeight="67.0" prefWidth="307.0" styleClass="right-buttons" text="Yes">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <AnchorPane prefHeight="236.0" prefWidth="1339.0" style="-fx-background-color: #322b6b;" styleClass="my-header" />
+   </children>
+</AnchorPane>
