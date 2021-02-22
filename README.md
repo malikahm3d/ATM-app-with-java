@@ -5,9 +5,9 @@ This application was part of the course 'Advanced programming'.
 We were instructed to build it within 10 days, part of the challenge of the project was time constraints.
 
 The stack for this application:
-Java
-Java scene builder
-css
+Java,
+Java scene builder,
+css,
 SQLite.
 
 we worked this project using the Pair programming technique.
